@@ -1,0 +1,19 @@
+enviroment:
+virtualBox and ubuntu 14.04 already installed in my MAC
+
+
+follow the guide in this link 
+http://docs.openstack.org/developer/devstack/
+
+error 1 occurs:
+the installation stop automatically, and back to the login window
+
+solution: follow the guide add stack user first
+
+error 2 occurs:
++ cp -p /opt/stack/keystone/etc/policy.json /etc/keystone
+cp: cannot create regular file '/etc/keystone/policy.json': Permission denied
+
+solution :
+insert stack user with root privileges in sudoers file manually
+
