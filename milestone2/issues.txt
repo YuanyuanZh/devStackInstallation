@@ -1,0 +1,25 @@
+Step1: Setup environment by following links
+	http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_openstack_rc.html
+	http://docs.openstack.org/icehouse/install-guide/install/apt/content/image-service-overview.html
+
+Error:
+	Error(connectFailure): Unable to establish connection to http://10.0.2.15:8774/v2.1/d55718b9c44c82a3950a0a4545771a
+
+	I google this error message and tried several solutions, doesn't work, finally I tried unstack and stack again, it works
+
+Solution :
+	Run unstack.sh
+	Reboot
+	Run stack.sh 
+
+
+Step 2: lanuch nova VM 
+
+Study to launch VM in command line
+	http://xmodulo.com/manage-vms-openstack-command-line-tools.html
+	see screenshot for result
+
+Study novaclient Python API, write python script 
+	http://docs.openstack.org/developer/python-novaclient/api.html
+
+some error occurs here, they are all due to I'm not familiar with nova API

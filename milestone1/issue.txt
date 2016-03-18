@@ -1,19 +1,26 @@
-enviroment:
-virtualBox and ubuntu 14.04 already installed in my MAC
+Step 0:
+since I didn't have any experience in OpenStack, So I choose to do some research firstly
+https://opensource.com/resources/what-is-openstack
+https://www.openstack.org/assets/pdf-downloads/virtualization-Integration-whitepaper-2015.pdf
 
+Step 1 :
+install 
+ubuntu 14.04 in  my VM
 
-follow the guide in this link 
+Step 2:
+follow the guide in this link to install devstack
 http://docs.openstack.org/developer/devstack/
 
+first round, I install devstack under my personal account which has admin privileges
 error 1 occurs:
-the installation stop automatically, and back to the login window
+	the installation stop automatically, and back to the login window, no error message shows	
+solution: 
+	I tried 2 time installation here, same error, so I checked my account permission and google it, I think it due to account's privilegdes, so I decide to follow the guide add stack user firstly, then install dexstack again under stack account
 
-solution: follow the guide add stack user first
 
 error 2 occurs:
-+ cp -p /opt/stack/keystone/etc/policy.json /etc/keystone
-cp: cannot create regular file '/etc/keystone/policy.json': Permission denied
-
+	+ cp -p /opt/stack/keystone/etc/policy.json /etc/keystone
+	cp: cannot create regular file '/etc/keystone/policy.json': Permission denied
 solution :
-insert stack user with root privileges in sudoers file manually
+	insert stack user with root privileges in sudoers file again manually
 
