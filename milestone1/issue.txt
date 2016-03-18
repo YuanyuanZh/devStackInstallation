@@ -15,7 +15,9 @@ first round, I install devstack under my personal account which has admin privil
 error 1 occurs:
 	the installation stop automatically, and back to the login window, no error message shows	
 solution: 
-	I tried 2 time installation here, same error, so I checked my account permission and google it, I think it due to account's privilegdes, so I decide to follow the guide add stack user firstly, then install dexstack again under stack account
+	I tried 2 time installation here, same error, so I checked my account permission and google it, 
+	I think it due to account's privilegdes, so I decide to follow the guide add stack user firstly, 
+	then install dexstack again under stack account
 
 
 error 2 occurs:
